@@ -1,0 +1,17 @@
+#!/bin/bash
+read -p "enter a number" num
+$count=0
+for $((i in $num/2))
+do
+if [ $num % i -eq 0]
+then
+    $count+=1
+fi
+if [$count -eq 2]
+then 
+    echo "non prime"
+else
+    echo "prime number"
+fi
+done
+
